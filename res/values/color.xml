@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_Color">#343534</color>
+    <color name="list_item_black">#000000</color>
+    <color name="list_item_Ablack">#88000000</color>
+    <color name="list_item_red">#c92d18</color>
+    <color name="withe">#ffffff</color>
+    <color name="Alphawithe">#88ffffff</color>
+    <color name="Awithe">#10000000</color>
+    <color name="noName">#FF9900</color>
+    <color name="list_item_Ablack1">#65000000</color>
+    <color name="noColor">#ccc</color>
+    <color name="shallowBlue">#33b5e5</color>
+    <color name="skyBlue">#4fcae9</color>
+    <color name="btnBgColor">#22000000</color>
+    <color name="rigister_edit_bgColor">#80e2e2e2</color>
+    <color name="black">#000000</color>
+   
+</resources>

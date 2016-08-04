@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">点餐宝(店家)</string>
+    <string name="drawer_open">我的店铺</string>
+    <string name="drawer_close">我的消息</string>
+    <string name="setting">系统设置</string>
+    <string name="expensecalendar"></string>
+    <string name="aboutus">关于我们</string>
+    <string name="versions">版本信息</string>
+    <string name="functionintroduce">功能介绍</string>
+    <string name="register_tip">提示</string>
+	<string name="register_prograss">正在注册...</string>
+    <string name="functionmessage">        	&#160;&#160;&#160;&#160;点餐宝是一款专为吃货设计的一款基于学校食堂的点餐软
+        	件,可以方便广大同学的就餐,节约时间,同时实现点餐的电子化,将科学技术更好的应用于日
+        	常生活中,提高我们的生活质量。\n
+        	&#160;&#160;&#160;&#160;本软件基本实现了学生日常生活中的点餐需求,按照菜品的
+        	新旧、热销程度、是否做活动以及店家等进行分类,方便学生查找自己喜欢的食品。充分考虑学生
+        	的用餐需求,为他们推荐即营养 又美味的食品。</string>
+    <string name="help">帮助</string>
+    <string name="helpmessage">        	\n
+        	1.程序反应较慢\n
+        	由于应用中图片较多,所以加载较慢,请耐心等待。\n
+        	2.程序有不少bug\n
+        	由于编者水平有限,初次编写小应用,经验不足,日后定会改善。\n
+        	3.程序功能较简单\n
+        	由于编者水平有限,请期待更高版本的更新,请耐心等待。\n
+        	如果大家对程序有好的改进建议和意见,欢迎联系我们。</string>
+    <string name="callus">联系我们</string>
+    <string name="usmessage">        	\n
+        	项目负责人：\n
+        	姚鸿       	qq：2293952179\n
+        	开发团队成员：\n
+        	夏文齐    	qq：1025582613\n
+        	常晨       	qq：707306945\n
+        	慕爽       	qq：930528771\n</string>
+    <string name="copyright">Copyright©2015.8.28 CMXY.All Rights Reserved.</string>
+    <string name="lookforit">查看详情</string>
+
+</resources>

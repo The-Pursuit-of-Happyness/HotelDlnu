@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/show_shop_title"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/back_arrows"
+        android:layout_height="40dp"
+        android:background="@color/title_Color"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ScrollView
+   		android:id="@+id/show_shop_message_scr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <RelativeLayout
+                    android:id="@+id/show_shop_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/show_shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/show_shop_starTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/show_shop_name"
+                        android:layout_marginTop="20dp"
+                        android:text="店铺星级:"
+                        android:textColor="#f62020"
+                        android:textSize="18sp" />
+
+                    <RatingBar
+                        android:id="@+id/show_shop_star"
+                        style="@style/roomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/show_shop_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_toRightOf="@id/show_shop_starTip"
+                        android:isIndicator="true"
+                        android:numStars="5" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="215dp"
+                        android:layout_height="0.2dp"
+                        android:layout_below="@id/show_shop_starTip"
+                        android:layout_marginTop="3dp"
+                        android:background="#cfcfcf" />
+
+                    <TextView
+                        android:id="@+id/show_shop_visit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line"
+                        android:layout_marginTop="4dp"
+                        android:textColor="#434443"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/show_shop_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@id/show_shop_visit"
+                        android:textColor="#014df8"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/show_shop_img"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <View style="@style/my_View" />
+
+            <RelativeLayout
+                android:id="@+id/show_shop_relCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/my_pressed_style"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/show_shop_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/call_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="电话 >"
+                    android:textColor="#074cfa" />
+
+                <View
+                    android:id="@+id/show_shop_line"
+                    style="@style/my_line"
+                    android:layout_below="@id/show_shop_call" />
+
+                <TextView
+                    android:id="@+id/show_shop_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/show_shop_line"
+                    android:layout_marginTop="3dp"
+                    android:drawableLeft="@drawable/map_arrows" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/show_shop_line"
+                    android:layout_marginTop="3dp"
+                    android:text="地点 >" />
+            </RelativeLayout>
+
+            <View style="@style/my_View" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/arrows"
+                android:text="嘴馋了吧！"
+                android:textColor="#88000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/my_pressed_style"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="clickEnterMess"
+                android:text=">>点击查看店家菜谱"
+                android:textColor="#070dfa"
+                android:textSize="22sp" />
+            
+            <View style="@style/my_View" />
+
+            <TextView
+                style="@style/show_mess_textView"
+                android:text="店铺简介" />
+
+            <View style="@style/my_line" />
+
+            <TextView
+                android:id="@+id/show_shop_describe"
+                style="@style/show_mess_content" />
+
+            <View style="@style/my_View" />
+
+            <TextView
+                style="@style/show_mess_textView"
+                android:text="经营范围" />
+
+            <View style="@style/my_line" />
+
+            <TextView
+                android:id="@+id/show_shop_server_area"
+                style="@style/show_mess_content" />
+
+            <View style="@style/my_View" />
+
+            <TextView
+                style="@style/show_mess_textView"
+                android:text="服务宗旨" />
+
+            <View style="@style/my_line" />
+
+            <TextView
+                android:id="@+id/show_mess_server_purpose"
+                style="@style/show_mess_content" />
+
+            <View style="@style/my_View" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

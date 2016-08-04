@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/customerimage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/app_icon" />
+
+        <TextView
+            android:id="@+id/ordercustomername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/customerimage"
+            android:text="jdslfjsdfjsdjs"
+            android:textColor="@color/list_item_black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/ordercustomername"
+            android:src="@drawable/jiantou1_pressed" />
+
+        <TextView
+            android:id="@+id/order_deal_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="jsdfs"
+            android:textColor="@color/skyBlue"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/my_line"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/iv_mess_icon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/iv_mess_icon"
+            android:textSize="20sp" >
+
+            <TextView
+                android:id="@+id/iv_mess_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/list_item_black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/iv_mess_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_mess_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/list_item_Ablack"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_mess_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_mess_temp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/list_item_red"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/by_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/iv_mess_temp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/list_item_Ablack"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <View
+        style="@style/my_line"
+        android:layout_marginTop="10dp" />
+    
+    <TextView 
+        android:id="@+id/my_order_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/list_item_red"
+        android:textSize="15sp"/>
+    
+    <View
+        style="@style/my_line"
+        android:layout_marginTop="10dp" />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户留言："
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/list_item_black"
+        android:textSize="18sp"/>    
+    <View
+        style="@style/my_line"
+        android:layout_marginTop="10dp" />
+    <TextView 
+        android:id="@+id/leavemessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/list_item_black"
+        android:textSize="15sp"/>
+    <View
+        style="@style/my_line"
+        android:layout_marginTop="10dp" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+        
+        <TextView 
+            android:id="@+id/my_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="ksdfks"
+            android:layout_alignParentLeft="true"/> 
+        
+        <Button 
+            android:id="@+id/my_order_comment"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/list_item_black"
+            android:textSize="12sp"
+            android:background="@drawable/news_focus_pressd_style"/>
+    </RelativeLayout>
+
+    <View style="@style/my_order_deal" />
+
+</LinearLayout>

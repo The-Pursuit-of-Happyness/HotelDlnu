@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:clientdlnu="http://schemas.android.com/apk/res/com.hotel.hoteldlnu"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/setting"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#dedede" />
+
+    <com.hotel.ui.SettingItemView
+        android:id="@+id/siv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_pressed_setting_style"
+        clientdlnu:desc_off="已关闭"
+        clientdlnu:desc_on="已开启"
+        clientdlnu:mv_icon="Login_setting"
+        clientdlnu:title_tip="自动登录账号" />
+
+    <com.hotel.ui.SettingItemView
+        android:id="@+id/siv_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_pressed_setting_style"
+        clientdlnu:desc_off="已关闭"
+        clientdlnu:desc_on="已开启"
+        clientdlnu:mv_icon="cache_setting"
+        clientdlnu:title_tip="自动清理缓存" />
+
+    <com.hotel.ui.SettingItemView
+        android:id="@+id/siv_clear_bell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_pressed_setting_style"
+        clientdlnu:desc_off="已关闭"
+        clientdlnu:desc_on="已开启"
+        clientdlnu:mv_icon="setting_sound"
+        clientdlnu:title_tip="系统声音" />
+
+    <com.hotel.ui.SettingClickView
+        android:id="@+id/siv_set_netWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_pressed_setting_style"
+        clientdlnu:mv_icon="network_setting"
+        clientdlnu:title_tip="设置网络" />
+
+    <com.hotel.ui.SettingClickView
+        android:id="@+id/siv_set_systemTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_pressed_setting_style"
+        clientdlnu:mv_icon="time_setting"
+        clientdlnu:title_tip="设置时间" />
+
+    <com.hotel.ui.SettingClickView
+        android:id="@+id/siv_set_clearTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_pressed_setting_style"
+        clientdlnu:mv_icon="cache_setting_time"
+        clientdlnu:title_tip="自动清理缓存周期" />
+
+    <com.hotel.ui.SettingClickView
+        android:id="@+id/siv_set_clearFolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_pressed_setting_style"
+        clientdlnu:mv_icon="cache_setting_folder"
+        clientdlnu:title_tip="应用缓存目录" />
+
+</LinearLayout>
